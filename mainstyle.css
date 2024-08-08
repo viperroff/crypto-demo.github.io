@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(237,237,237,0.90);
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+    border-radius: 10px;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+.intro_one {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.infocard_one, .infocard_two {
+    margin: 10px;
+}
+
+.infocard_one {
+    background: black;
+    width: 750px;
+    height: 1000px;
+    border-radius: 20px;
+    
+}
+
+.txth {
+    color: aliceblue;
+    font-family: molot;
+    font-size: 30px;
+    padding: 20px;
+}
+
+#name_card {
+    font-size: 90px;
+    color: red;
+    
+    &::selection {
+        background-color: #EC154F;
+        color: #FFA800;
+    }
+}
+
+#cardone_img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+}
+
+.txth > #explain_txt {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+#name_card:after {
+    content: "от артиста The Weeknd";
+    color: white;
+    font-size: 25px;
+}
+
+.infocard_two {
+    width: 1000px;
+    height: 1000px;
+    border-radius: 20px;
+    background: black;
+}
+
+.infocard_two > div > img {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 20px;
+    
+}
+
+@media(max-width: 1250px){
+    .infocard_one, .infocard_two, .infocard_two img {
+        width: calc(850px - 10%);
+        height: calc(850px - 10%);
+        
+    }
+    
+    .infocard_two > div > img {
+        height: 615px;
+    }
+    
+    #cardone_img {
+        height: 360px;
+    }
+    
+    .txth {
+        font-size: 20px;
+        padding: 15px;
+    }
+    
+    #name_card:after {
+        font-size: 15px;
+    }
+    
+    #name_card {
+    font-size: 60px;
+    }
+    
+    .txth > #explain_txt {
+    margin-top: 10px;
+    font-size: 15px;
+    }
+    
+    .intro_one {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+@media(min-width: 1150px) and (max-width: 1830px){
+    .infocard_one, .infocard_two, .infocard_two img {
+        width: 500px;
+        height: 615px;
+        
+    }
+    
+    .infocard_two > div > img {
+        height: 615px;
+    }
+    
+    #cardone_img {
+        height: 360px;
+    }
+    
+    .txth {
+        font-size: 20px;
+        padding: 15px;
+    }
+    
+    #name_card:after {
+        font-size: 15px;
+    }
+    
+    #name_card {
+    font-size: 60px;
+    }
+    
+    .txth > #explain_txt {
+    margin-top: 10px;
+    font-size: 15px;
+    }
+    
+    
+}
